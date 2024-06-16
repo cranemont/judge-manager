@@ -3,8 +3,7 @@ package handler
 import (
 	"errors"
 	"fmt"
-
-	"github.com/cranemont/iris/src/service/logger"
+	"github.com/cranemont/iris/lib/logger"
 )
 
 type HandlerError struct {

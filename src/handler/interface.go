@@ -2,8 +2,8 @@ package handler
 
 import (
 	"encoding/json"
+	"github.com/cranemont/iris/lib/logger"
 
-	"github.com/cranemont/iris/src/service/logger"
 	"github.com/cranemont/iris/src/service/sandbox"
 )
 

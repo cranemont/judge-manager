@@ -4,11 +4,10 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
+	"github.com/cranemont/iris/lib/logger"
 	"os"
 	"os/exec"
 	"strconv"
-
-	"github.com/cranemont/iris/src/service/logger"
 )
 
 type Sandbox interface {

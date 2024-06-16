@@ -3,6 +3,7 @@ package handler
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/cranemont/iris/lib/logger"
 	"strconv"
 	"time"
 
@@ -10,7 +11,6 @@ import (
 	"github.com/cranemont/iris/src/common/result"
 	"github.com/cranemont/iris/src/service/file"
 	"github.com/cranemont/iris/src/service/grader"
-	"github.com/cranemont/iris/src/service/logger"
 	"github.com/cranemont/iris/src/service/sandbox"
 	"github.com/cranemont/iris/src/service/testcase"
 	"github.com/cranemont/iris/src/utils"
