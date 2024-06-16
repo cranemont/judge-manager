@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"github.com/cranemont/iris/lib/logger"
 	"net/http"
 	"os"
 	"strconv"
@@ -17,7 +18,6 @@ import (
 	"github.com/cranemont/iris/src/handler"
 	"github.com/cranemont/iris/src/router"
 	"github.com/cranemont/iris/src/service/file"
-	"github.com/cranemont/iris/src/service/logger"
 	"github.com/cranemont/iris/src/service/sandbox"
 	"github.com/cranemont/iris/src/service/testcase"
 	"github.com/cranemont/iris/src/utils"
@@ -60,7 +60,7 @@ func main() {
 			utils.Getenv("TESTCASE_SERVER_URL_PLACEHOLDER", ":id"),
 			utils.Getenv("TESTCASE_SERVER_AUTH_TOKEN", "iris"),
 			utils.Getenv("TESTCASE_SERVER_AUTH_HEADER", "Authorization"),
-			time.Second * time.Duration(timeout),
+			time.Second*time.Duration(timeout),
 		)
 	}
 	testcaseManager := testcase.NewTestcaseManager(dataSource, cache)

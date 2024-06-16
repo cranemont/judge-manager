@@ -3,9 +3,9 @@ package router
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/cranemont/iris/lib/logger"
 
 	"github.com/cranemont/iris/src/handler"
-	"github.com/cranemont/iris/src/service/logger"
 )
 
 const (

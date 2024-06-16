@@ -2,3 +2,5 @@ results
 judger.log
 log
 logs
+.idea*
+/go.work.sum

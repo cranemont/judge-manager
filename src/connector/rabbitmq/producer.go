@@ -3,9 +3,9 @@ package rabbitmq
 import (
 	"context"
 	"fmt"
+	"github.com/cranemont/iris/lib/logger"
 	"log"
 
-	"github.com/cranemont/iris/src/service/logger"
 	amqp "github.com/rabbitmq/amqp091-go"
 )
 
